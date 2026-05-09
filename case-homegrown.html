@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <title>Homegrown — Benjamin Kgosiesele</title>
+  <meta name="description" content="Case study: prototype design for a merchant app, a Botswana digital payments platform serving small traders to medium enterprises. mPOS, QR-based payments, send and receive flows. Currently pending Bank of Botswana approval.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <noscript>
+    <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="top" id="topNav">
+    <a href="index.html" class="mark">Benjamin<span>.</span></a>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">Info</a></li>
+      <li><a href="about.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== BACK LINK ===== -->
+  <div class="back-bar">
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <span class="arrow">←</span>
+        <span>Back to all work</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== CASE HEADER ===== -->
+  <header class="case-header">
+    <div class="container">
+      <div class="case-tags">
+        <span>Fintech</span>
+        <span>Payments</span>
+        <span>mPOS &amp; QR</span>
+        <span>Mobile-first</span>
+        <span>Greenfield product</span>
+      </div>
+      <h1 class="case-title">Designing a <em>homegrown payments app</em> for traders and enterprises.</h1>
+      <p class="case-clients">A Botswana-built digital payment platform launching to market in 2026. Built for small traders through to medium enterprises, with sending, receiving, and payment via mobile point-of-sale (mPOS) and QR code. </p>
+    </div>
+  </header>
+
+ 
+
+  <!-- =====================================================
+       CONTEXT
+       ===================================================== -->
+  <section class="case-section">
+    <div class="container narrow reveal">
+      <span class="section-label">Context</span>
+      <h2>Building payments for <em>two audiences at once</em>.</h2>
+      <p>The solution was conceived as a homegrown alternative for Botswana's payments market — a single platform serving everyone from informal small-scale traders working out of stalls and pop-ups, through to medium enterprises with formal back-office operations. The founders' brief was to make sending, receiving, and accepting payments as simple as a phone call, with a handy mobile point-of-sale device (mPOS) and QR code that "worked anywhere."</p>
+      <p>The design challenge sat in the gap between those two audiences. A polished enterprise-grade UI would alienate first-time digital traders. A radically simplified consumer flow wouldn't give enterprises the controls they need. The product had to feel native to both — without forking into two separate apps.</p>
+    </div>
+  </section>
+
+  <!-- ===== Stat strip — context signals ===== -->
+  <section class="case-section" style="margin-top: 0;">
+    <div class="container reveal">
+      <div class="stat-strip">
+        <div class="stat">
+          <span class="figure text">Greenfield<br>product</span>
+          <span class="label">Designed from a blank page — no prior product to reference.</span>
+        </div>
+        <div class="stat">
+          <span class="figure text">Two<br>audiences</span>
+          <span class="label">Small traders and medium enterprises served by one app.</span>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       RESEARCH
+       ===================================================== -->
+  <section class="case-section">
+    <div class="container narrow reveal">
+      <span class="section-label">Research</span>
+      <h2>Working from <em>founder vision</em> and the realities of Botswana's trading culture.</h2>
+      <p>I worked closely with the founders — who knew their market intimately — and grounded the design in observable patterns of how small traders and enterprises in Botswana already handle payments today: cash-first, mobile-money-supplemented, with WhatsApp serving as the de-facto support channel and word-of-mouth as the primary trust mechanism.</p>
+    </div>
+
+    <div class="container reveal">
+      <div class="research-grid">
+        <div class="research-card">
+          <span class="method-num">01 · Method</span>
+          <h4>Founder workshops</h4>
+          <p>Structured sessions with the founders to translate the product vision into specific user roles, transaction types, edge cases, and success criteria. Surfaced the trade-offs between simplicity and capability that the design would need to navigate.</p>
+          <span class="who">Founder vision</span>
+        </div>
+        <div class="research-card">
+          <span class="method-num">02 · Method</span>
+          <h4>Market &amp; competitive scan</h4>
+          <p>Reviewed how existing local players (mobile money, bank apps, USSD services) and regional fintechs (M-Pesa, MTN MoMo, regional QR-pay platforms) handle the same transactional moments — what's familiar to Botswana users and what's a learnable new pattern.</p>
+          <span class="who">Local &amp; regional payments products</span>
+        </div>
+        <div class="research-card">
+          <span class="method-num">03 · Method</span>
+          <h4>Behavioural grounding</h4>
+          <p>Mapped the everyday payment behaviours of both audiences — how a market trader prices goods on the fly, how an enterprise reconciles end-of-day takings, where each gets stuck or improvises today. Used to anchor design decisions in real-world friction, not theoretical UX.</p>
+          <span class="who">Trader &amp; enterprise transactional contexts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- =====================================================
+       INSIGHTS
+       ===================================================== -->
+  <section class="case-section" style="margin-top: 80px;">
+    <div class="container narrow reveal">
+      <span class="section-label">Insights</span>
+      <h2>What the research surfaced.</h2>
+      <p>The discovery work pointed at a small set of consistent realities for the Botswana market — patterns that became the constraints the design had to honour.</p>
+    </div>
+
+    <div class="container narrow reveal">
+      <div class="insights-list">
+        <div class="insight">
+          <span class="insight-num">01</span>
+          <div>
+            <h4>Trust beats features.</h4>
+            <p>For first-time digital-payment users, the design earns trust through explicit confirmation, plain-language receipts, and visible amounts — not through feature density. A "fast and secure" promise has to be felt at every screen, not just claimed in the marketing.</p>
+          </div>
+        </div>
+        <div class="insight">
+          <span class="insight-num">02</span>
+          <div>
+            <h4>Two audiences, one mental model.</h4>
+            <p>Small traders and enterprises don't need different apps — they need the same core flows with different controls layered on top. An enterprise admin view, role-based permissions, and reconciliation tools sit on the same flow a market trader uses to take a single payment.</p>
+          </div>
+        </div>
+      
+        <div class="insight">
+          <span class="insight-num">03</span>
+          <div>
+            <h4>Connectivity is variable; the design has to know that.</h4>
+            <p>Outside Gaborone and Francistown, network coverage drops. A payment flow that works only on strong 4G fails the very users the solution is trying to reach. Offline-tolerance and clear failure states became as important as the happy path.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       PROCESS
+       ===================================================== -->
+  <section class="case-section" style="margin-top: 80px;">
+    <div class="container reveal">
+      <span class="section-label">Process</span>
+      <h2>From <em>founder vision</em> to high-fidelity prototype.</h2>
+
+      <div class="process-phases">
+        <div class="phase">
+          <span class="phase-num">01 · Frame</span>
+          <h4>Frame</h4>
+          <ul>
+            <li>Founder workshops</li>
+            <li>Market &amp; competitive scan</li>
+            <li>User roles &amp; permissions model</li>
+            <li>Transaction taxonomy</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <span class="phase-num">02 · Architect</span>
+          <h4>Architect</h4>
+          <ul>
+            <li>Information architecture</li>
+            <li>End-to-end user flows</li>
+            <li>Cross-channel journey map</li>
+            <li>State diagrams (success / failure / offline)</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <span class="phase-num">03 · Design</span>
+          <h4>Design</h4>
+          <ul>
+            <li>Wireframes &amp; prototyping</li>
+            <li>Visual identity application</li>
+            <li>Component library</li>
+            <li>mPOS companion patterns</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <span class="phase-num">04 · Validate</span>
+          <h4>Validate</h4>
+          <ul>
+            <li>Prototype walkthroughs</li>
+            <li>Founder review &amp; iteration</li>
+            <li>Engineering feasibility checks</li>
+            <li>Regulatory readiness review</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+ 
+
+  <!-- =====================================================
+       OUTCOMES
+       ===================================================== -->
+  <section class="case-section" style="margin-top: 80px;">
+    <div class="container reveal">
+      <span class="section-label">Outcomes</span>
+      <h2>Prototype delivered.</h2>
+
+      <div class="outcomes-grid">
+        <div class="outcome">
+          <span class="figure text">High-fidelity<br>prototype</span>
+          <span class="desc">Validated by founders, ready for engineering handoff.</span>
+        </div>
+        <div class="outcome">
+          <span class="figure text">Two audiences,<br>one app</span>
+          <span class="desc">Single product serving traders and enterprises through layered controls.</span>
+        </div>
+        <div class="outcome">
+          <span class="figure text">Component<br>library</span>
+          <span class="desc">Design system foundation for build and post-launch evolution.</span>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEXT CASE ===== -->
+  <section class="next-case">
+    <div class="container">
+      <div class="next-case-inner">
+        <div>
+          <span class="nav-label">Or return to</span>
+          <a href="index.html">All work <span class="arrow">→</span></a>
+        </div>
+        <div style="text-align: right;">
+          <span class="nav-label">Start over</span>
+          <a href="case-multi-product.html">First case <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="case-footer">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;gap:16px;">
+      <span>© Benjamin G. Kgosiesele · Gaborone, Botswana</span>
+      <span class="set-in">Set in Fraunces &amp; Manrope</span>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('topNav');
+    const onScroll = () => {
+      if (window.scrollY > 8) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+        });
+      }, { rootMargin: '0px 0px -60px 0px', threshold: 0.05 });
+      revealEls.forEach(el => io.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('in'));
+    }
+    setTimeout(() => { revealEls.forEach(el => el.classList.add('in')); }, 600);
+  </script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <title>Digitising SHE compliance — Benjamin Kgosiesele</title>
+  <meta name="description" content="Case study: digitising Safety, Health & Environment compliance for a mining operation. Vendor stories validated, structured into user stories and flows, and built as a self-serve digital platform.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- =====================================================
+       NAV
+       ===================================================== -->
+  <nav class="top" id="topNav">
+    <a href="index.html" class="mark">Benjamin<span>.</span></a>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">Info</a></li>
+      <li><a href="about.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- =====================================================
+       BACK LINK
+       ===================================================== -->
+  <div class="back-bar">
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <span class="arrow">←</span>
+        <span>Back to all work</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       CASE HEADER
+       ===================================================== -->
+  <header class="case-header">
+    <div class="container">
+      <div class="case-tags">
+        <span>Compliance</span>
+        <span>Mining</span>
+        <span>Self-service</span>
+        <span>User stories &amp; flows</span>
+        <span>Workflow design</span>
+      </div>
+      <h1 class="case-title">Digitising <em>Safety, Health &amp; Environment</em> compliance for a mining operation.</h1>
+      <p class="case-clients">BridgeGap — vendor compliance platform replacing a manual document-review process. Vendor input collected by BridgeGap during stakeholder engagement; structured into design artifacts and built out as a self-serve digital platform.</p>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       HERO IMAGE
+       ===================================================== -->
+  <div class="container">
+    <div class="case-hero-img" data-label="Hero image — vendor compliance dashboard">
+   <img src="images/bridgegap.jpg" alt="SHE compliance dashboard — vendor document tracking"> 
+    </div>
+  </div>
+
+  <!-- =====================================================
+       CONTEXT
+       ===================================================== -->
+  <section class="case-section">
+    <div class="container narrow reveal">
+      <span class="section-label">Context</span>
+      <h2>A compliance process that worked on paper — and <em>only on paper</em>.</h2>
+      <p>SHE officers at the mining operation were reviewing every vendor compliance document by hand. Document submissions arrived by email and physical handover. Officers tracked status in spreadsheets and inboxes. The volume created a backlog, and during time-sensitive operations like plant shutdowns, vendors were occasionally cleared with documentation gaps.</p>
+      <p>The problem wasn't a lack of process — the process existed and was well-defined on paper. The problem was that the process lived in inboxes, with no shared visibility across the operation, and no scalable way to handle peak periods.</p>
+    </div>
+  </section>
+
+  <!-- ===== Stat strip — scale signals ===== -->
+  <section class="case-section" style="margin-top: 0;">
+    <div class="container reveal">
+      <div class="stat-strip">
+        <div class="stat">
+          <span class="figure">100%</span>
+          <span class="label">Of compliance reviews previously handled by manual document checking.</span>
+        </div>
+        <div class="stat">
+          <span class="figure">Multi-<br>vendor</span>
+          <span class="label">Vendor pool spread across active operations and shutdown projects.</span>
+        </div>
+        <div class="stat">
+          <span class="figure">Audit<br>exposure</span>
+          <span class="label">Recurring risk of vendors cleared with incomplete documentation.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       RESEARCH (Validation-first)
+       ===================================================== -->
+  <section class="case-section">
+    <div class="container narrow reveal">
+      <span class="section-label">Research</span>
+      <h2>Vendor stories, <em>validated and structured</em> into design inputs.</h2>
+      <p>BridgeGap had already done the field engagement — collecting raw stories and pain points from vendors during stakeholder interviews. My role on the research side was different from a typical discovery: rather than running primary interviews, I worked from the qualitative material BridgeGap had gathered, validating it against operational reality and translating it into the design artifacts the build would actually run on.</p>
+    </div>
+
+    <div class="container reveal">
+      <div class="research-grid">
+        <div class="research-card">
+          <span class="method-num">01 · Method</span>
+          <h4>Validation of vendor stories</h4>
+          <p>Reviewed and validated raw vendor input collected by BridgeGap. Cross-checked against SHE compliance officers and operational records to confirm that what vendors described matched what the operation observed.</p>
+          <span class="who">Source: BridgeGap field engagement · validated with SHE officers</span>
+        </div>
+        <div class="research-card">
+          <span class="method-num">02 · Method</span>
+          <h4>User story development</h4>
+          <p>Translated validated input into structured user stories — "As a vendor, I want to track which documents are due for renewal, so that I never miss a compliance window." One story per recurring need, scoped to fit the platform's first release.</p>
+          <span class="who">Two user roles: vendor &middot; SHE officer</span>
+        </div>
+        <div class="research-card">
+          <span class="method-num">03 · Method</span>
+          <h4>User flow &amp; journey mapping</h4>
+          <p>Mapped end-to-end flows for each user story: document upload, expiry tracking, officer review, exception handling, audit trail. Journeys covered the unhappy paths — gaps, rejections, escalations — alongside the happy paths.</p>
+          <span class="who">Vendor-side flows · officer-side flows · cross-stakeholder journeys</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process image row — research artefacts -->
+  <div class="container">
+    <div class="image-row reveal">
+      <div class="img-frame" data-label="User stories — vendor and SHE officer roles">
+        <img src="images/brigdge2.jpg" alt="User stories for vendor and officer roles" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+      <div class="img-frame" data-label="User flow diagram — document submission to approval">
+        <img src="images/brigdge3.jpg" alt="User flow diagram for compliance submission" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+    <p class="image-caption container narrow" style="padding-left:0;padding-right:0;"></p>
+  </div>
+
+  <!-- =====================================================
+       INSIGHTS
+       ===================================================== -->
+  <section class="case-section" style="margin-top: 80px;">
+    <div class="container narrow reveal">
+      <span class="section-label">Insights</span>
+      <h2>What the validation surfaced.</h2>
+      <p>Working through the stories and flows surfaced a small number of consistent patterns. They became the foundation for the design moves that followed.</p>
+    </div>
+
+    <div class="container narrow reveal">
+      <div class="insights-list">
+        <div class="insight">
+          <span class="insight-num">01</span>
+          <div>
+            <h4>Vendors didn't know where they stood until someone told them.</h4>
+            <p>Compliance status lived inside the operation's inbox — not on a vendor's screen. Vendors learned about expired documents only when they were turned away from a job, or when a SHE officer chased them.</p>
+          </div>
+        </div>
+        <div class="insight">
+          <span class="insight-num">02</span>
+          <div>
+            <h4>The same checks were being repeated, every time.</h4>
+            <p>For each engagement, officers reviewed the same set of documents against the same rules. There was no shared record of "this vendor's documents are current" — every reviewer started from scratch.</p>
+          </div>
+        </div>
+        <div class="insight">
+          <span class="insight-num">03</span>
+          <div>
+            <h4>Time sensitive operations exposed the brittleness.</h4>
+            <p>During plant shutdowns, the volume of vendor approvals spiked and the manual workflow couldn't scale. That's when documentation gaps slipped through — not because of carelessness, but because of throughput limits.</p>
+          </div>
+        </div>
+        <div class="insight">
+          <span class="insight-num">04</span>
+          <div>
+            <h4>The audit trail was invisible until it was needed.</h4>
+            <p>When auditors or regulators asked for evidence of compliance, the trail had to be reconstructed from emails and spreadsheets. The operation had the right behaviour, but not always the right paper.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       PROCESS
+       ===================================================== -->
+  <section class="case-section" style="margin-top: 80px;">
+    <div class="container reveal">
+      <span class="section-label">Process</span>
+      <h2>From <em>vendor stories</em> to shipped UI, in four phases.</h2>
+
+      <div class="process-phases">
+        <div class="phase">
+          <span class="phase-num">01 · Validate</span>
+          <h4>Validate</h4>
+          <ul>
+            <li>Review BridgeGap field input</li>
+            <li>Cross-check with SHE officers</li>
+            <li>Confirm operational realities</li>
+            <li>Surface recurring patterns</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <span class="phase-num">02 · Structure</span>
+          <h4>Structure</h4>
+          <ul>
+            <li>Write user stories</li>
+            <li>Define user roles &amp; permissions</li>
+            <li>Scope first release</li>
+            <li>Map success criteria</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <span class="phase-num">03 · Map</span>
+          <h4>Map</h4>
+          <ul>
+            <li>User flow diagrams</li>
+            <li>End-to-end journeys</li>
+            <li>Unhappy paths &amp; exceptions</li>
+            <li>Cross-stakeholder handoffs</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <span class="phase-num">04 · Design</span>
+          <h4>Design</h4>
+          <ul>
+            <li>UI design</li>
+            <li>Component library</li>
+            <li>Engineering partnership</li>
+            <li>UAT &amp; release readiness</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       APPROACH
+       ===================================================== -->
+  <section class="case-section" style="margin-top: 80px;">
+    <div class="container narrow reveal">
+      <span class="section-label">Approach</span>
+      <h2>Moved the workflow <em>from inboxes to a platform</em>.</h2>
+      <p>The user stories and flows pointed clearly at the design move: stop treating compliance as a series of one-off document reviews, and start treating it as a continuous state that vendors and officers share visibility on.</p>
+      <p>I designed a self-service platform where vendors upload, track, and update compliance documents directly. Each document type has its own validation, expiry tracking, and renewal cadence — surfaced to the vendor before it becomes a blocker. On the officer side, status and exception flows mean SHE officers see where each vendor stands without manual checking, and urgent gaps surface automatically rather than waiting for someone to go looking.</p>
+      <p>I also delivered a component library to support continued feature work as the platform expanded into adjacent areas: vendor onboarding, asset tracking, and shutdown project management. The design system was deliberately scoped to extend.</p>
+    </div>
+  </section>
+
+
+
+  <!-- =====================================================
+       OUTCOMES
+       ===================================================== -->
+  <section class="case-section" style="margin-top: 80px;">
+    <div class="container reveal">
+      <span class="section-label">Outcomes</span>
+      <h2>From <em>reactive</em> document review to proactive compliance.</h2>
+
+      <div class="outcomes-grid">
+        <div class="outcome">
+          <span class="figure">65%</span>
+          <span class="desc">Reduced workload from paperbased processing.</span>
+        </div>
+        <div class="outcome">
+          <span class="figure text">Self-serve<br>uploads</span>
+          <span class="desc">Vendors update documents directly; manual verification removed.</span>
+        </div>
+        <div class="outcome">
+          <span class="figure text">Component<br>library</span>
+          <span class="desc">UI library delivered to support continued feature work.</span>
+        </div>
+        <div class="outcome">
+          <span class="figure text">Stakeholder<br>visibility</span>
+          <span class="desc">Compliance status, documents expiry, audit trail surfaced.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- =====================================================
+       NEXT CASE
+       ===================================================== -->
+  <section class="next-case">
+    <div class="container">
+      <div class="next-case-inner">
+        <div>
+          <span class="nav-label">Next project</span>
+          <a href="case-micro-lender.html">Onboarding redesign for a micro-lender <span class="arrow">→</span></a>
+        </div>
+        <div style="text-align: right;">
+          <span class="nav-label">Or return to</span>
+          <a href="index.html">All work <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="case-footer">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;gap:16px;">
+      <span>© Benjamin G. Kgosiesele · Gaborone, Botswana</span>
+      <span class="set-in">Set in Fraunces &amp; Manrope</span>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('topNav');
+    const onScroll = () => {
+      if (window.scrollY > 8) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -60px 0px', threshold: 0.05 });
+      revealEls.forEach(el => io.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('in'));
+    }
+    setTimeout(() => {
+      revealEls.forEach(el => el.classList.add('in'));
+    }, 600);
+  </script>
+</body>
+</html>

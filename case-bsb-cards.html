@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <title>BSB three-tier debit card range — Benjamin Kgosiesele</title>
+  <meta name="description" content="Case study: brand and visual identity work for a tiered banking debit card range. Three distinct identities within one design family.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- =====================================================
+       NAV
+       ===================================================== -->
+  <nav class="top" id="topNav">
+    <a href="index.html" class="mark">Benjamin<span>.</span></a>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">Info</a></li>
+      <li><a href="about.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- =====================================================
+       BACK LINK
+       ===================================================== -->
+  <div class="back-bar">
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <span class="arrow">←</span>
+        <span>Back to all work</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       CASE HEADER
+       ===================================================== -->
+  <header class="case-header">
+    <div class="container">
+      <div class="case-tags">
+        <span>Brand</span>
+        <span>Customer segmentation</span>
+        <span>Banking</span>
+      </div>
+      <h1 class="case-title">BSB <em>three-tier</em> debit card range.</h1>
+      <p class="case-clients">Botswana Savings Bank (BSB) - Brand and visual identity work for a tiered banking product line — three customer segments, one family.</p>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       HERO IMAGE
+       ===================================================== -->
+  <div class="container">
+    <div class="case-hero-img" data-label="Hero image — three card tiers, side-by-side">
+      <img src="images/bsbcards.jpg" alt="BSB three-tier debit card range — all three cards">
+    </div>
+  </div>
+
+  <!-- =====================================================
+       CONTEXT
+       ===================================================== -->
+  <section class="case-section">
+    <div class="container narrow reveal">
+      <span class="section-label">Context</span>
+      <h2>One brand family, <em>three distinct tiers</em>.</h2>
+      <p>BSB needed visual identity for a three-tier debit card range. Each tier served a different customer segment, but the cards had to read as part of one brand family. The challenge wasn't choosing colours — it was choosing how much should change, and how much should stay constant.</p>
+      <p>Cards live in wallets, on counters, and in customers' hands daily. The design had to read at a glance, hold up over time, and survive whatever printing and finishing the manufacturing partners could deliver.</p>
+    </div>
+  </section>
+
+  
+
+  <!-- =====================================================
+       WHAT I DID
+       ===================================================== -->
+  <section class="case-section" style="margin-top: 80px;">
+    <div class="container narrow reveal">
+      <span class="section-label">What I did</span>
+      <h2>Designed the <em>family</em>, then differentiated each tier.</h2>
+      <p>I started with the family — the shared structural grid, brand cues, and typography that would identify any card in the range as a BSB card. Once that foundation was solid, I designed each tier within those constraints.</p>
+      <p>The differentiation came from colour, graphics, finish, and small hierarchy moves. Each design tier was based on the taste for all users, this wans't just a design project - UX was weaved into entire process. Specifications went to manufacturing partners with full production guidance.</p>
+    </div>
+  </section>
+
+  
+
+  <!-- =====================================================
+       OUTCOMES
+       ===================================================== -->
+  <section class="case-section" style="margin-top: 80px;">
+    <div class="container reveal">
+      <span class="section-label">Outcomes</span>
+      <h2>Three tiers, <em>one family</em>.</h2>
+
+      <div class="outcomes-grid">
+        <div class="outcome">
+          <span class="figure">3</span>
+          <span class="desc">Card tiers within a single brand family.</span>
+        </div>
+        <div class="outcome">
+          <span class="figure text">Tier visible<br>at a glance</span>
+          <span class="desc">Customers and staff identify tier without reading.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- =====================================================
+       NEXT CASE
+       ===================================================== -->
+  <section class="next-case">
+    <div class="container">
+      <div class="next-case-inner">
+        <div>
+          <span class="nav-label">Next project</span>
+          <a href="case-homegrown.html">Homegrown payments app <span class="arrow">→</span></a>
+        </div>
+        <div style="text-align: right;">
+          <span class="nav-label">Or return to</span>
+          <a href="index.html">All work <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="case-footer">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;gap:16px;">
+      <span>© Benjamin G. Kgosiesele · Gaborone, Botswana</span>
+      <span class="set-in">Set in Fraunces &amp; Manrope</span>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('topNav');
+    const onScroll = () => {
+      if (window.scrollY > 8) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -60px 0px', threshold: 0.05 });
+      revealEls.forEach(el => io.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('in'));
+    }
+    setTimeout(() => {
+      revealEls.forEach(el => el.classList.add('in'));
+    }, 600);
+  </script>
+</body>
+</html>
